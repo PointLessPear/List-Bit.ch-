@@ -1,0 +1,20 @@
+# list bit.ch v1
+
+my_list = []
+
+while True:
+    command = input("What would you like to do?\n > ")
+
+    if command == "list":
+        if len(my_list) == 0:
+            print("List is empty!")
+            
+        for item in my_list:
+            print("- " + item)
+
+    elif command == "add":
+        item = input("What would you like to add to the list? \n > ")
+
+        my_list.append(item)
+
+        print("Added!")
